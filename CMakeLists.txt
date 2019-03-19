@@ -4,6 +4,6 @@ project(NiFpgaHelper)
 
 add_library(NiFpgaHelper SHARED NiFpga.c)
 target_link_libraries(NiFpgaHelper -ldl)
-set_target_properties(NiFpgaHelper PROPERTIES VERSION 2017.0 SOVERSION 2017.0)
+set_target_properties(NiFpgaHelper PROPERTIES VERSION 2018.0 SOVERSION 2018.0)
 install(TARGETS NiFpgaHelper DESTINATION ${CMAKE_INSTALL_LIBDIR})
 install(FILES NiFpga.h DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
