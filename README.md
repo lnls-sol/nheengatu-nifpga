@@ -3,8 +3,9 @@
 This project packages the NiFpga.c and NiFpga.h provided by LabView FPGA
 to integrate C code with FPGA firmware. It builds a library with the
 code and installs it, along with the include file. The library is called
-libNiFpgaHelper.so and works by using dlopen() to call the real library
-(usually in $nilibdir/natinst/lib/libNiFpga.so).
+libNiFpgaHelper.so. A sample NiFpga.c and NiFpga.h are provided, but
+depending on you CompactRIO version, when you generate the C API for your
+labview project, put the generated NiFpga.c and NiFpga.h here, and build.
 
 ## Usage:
 
